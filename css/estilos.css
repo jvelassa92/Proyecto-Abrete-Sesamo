@@ -522,6 +522,11 @@ tr:hover {
         text-align: center;
     }
 
+    /* --- AGRÉGALO AQUÍ: Ocultamos la imagen de "Nosotros" en celulares --- */
+    .nosotros-imagen {
+        display: none;
+    }
+
     /* Nosotros a una columna */
     .nosotros {
         flex-direction: column;
