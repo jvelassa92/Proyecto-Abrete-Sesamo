@@ -522,15 +522,22 @@ tr:hover {
         text-align: center;
     }
 
-    /* --- AGRÉGALO AQUÍ: Ocultamos la imagen de "Nosotros" en celulares --- */
-    .nosotros-imagen {
-        display: none;
+    /* Nosotros a una columna pero INVIRTIENDO el orden para que el texto vaya primero y la imagen debajo */
+    .nosotros {
+        flex-direction: column-reverse; /* Esto pone la imagen debajo del texto en celulares */
+        padding: 30px 20px;
+        gap: 30px; /* Espacio agradable entre el texto y la imagen cuando se apilan */
     }
 
-    /* Nosotros a una columna */
-    .nosotros {
-        flex-direction: column;
-        padding: 30px 20px;
+    /* Aseguramos que la imagen ocupe un buen ancho centrado en móvil */
+    .nosotros-imagen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nosotros-imagen img {
+        max-width: 100%;
     }
 
     /* Ajustes generales de padding */
