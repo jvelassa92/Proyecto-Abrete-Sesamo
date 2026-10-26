@@ -157,20 +157,24 @@ img {
     display: flex;
     align-items: center;
     padding: 60px 50px;
-    gap: 40px;
+    gap: 50px; /* Alineado con el espacio de la sección hero para mantener simetría */
 }
 
 .nosotros-imagen {
-    flex: 1;
+    flex: 0.9; /* Controlamos el ancho para que la imagen luzca proporcionada */
+    display: flex;
+    justify-content: center;
 }
 
 .nosotros-imagen img {
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    max-width: 480px; /* Limitamos el tamaño máximo para que no domine toda la pantalla */
+    width: 100%;
 }
 
 .nosotros-texto {
-    flex: 1;
+    flex: 1.1; /* Damos un respiro cómodo al bloque de textos */
 }
 
 .nosotros-texto h2 {
@@ -179,8 +183,8 @@ img {
 
 .nosotros-texto h3 {
     color: var(--color-complementario);
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 20px; /* Un pequeño margen superior para separar los bloques visualmente */
+    margin-bottom: 8px;
     font-size: 20px;
 }
 
